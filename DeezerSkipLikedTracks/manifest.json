@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Deezer Only New Tracks",
+  "description": "Skips tracks you already liked, because how you are going to discover new music otherwise?",
+  "version": "1.0.0",
+  "icons": { "128": "icon.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.deezer.com/*"],
+      "js": ["popup.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "author": [
+    {
+      "name": "Dany ae"
+    }
+  ]
+}
