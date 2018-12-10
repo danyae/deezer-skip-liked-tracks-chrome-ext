@@ -47,6 +47,7 @@ function checkCurrentSong() {
       switchSong();
     }
   }
+  currentSong = newSong;
   setTimeout(checkCurrentSong, 2000);
 }
 
@@ -57,6 +58,7 @@ interval = setInterval(() => {
   // button.addEventListener("click", main, false);
   checkCurrentSong();
 }, 5000);
+
 
 // function getNextInterval() {
 //   var inputMax = document.getElementsByClassName("slider-counter-max")[0]
