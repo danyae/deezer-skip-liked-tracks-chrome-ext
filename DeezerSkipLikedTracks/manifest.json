@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.deezer.com/*"],
-      "js": ["popup.js"],
+      "js": ["background.js"],
       "run_at": "document_end"
     }
   ],
